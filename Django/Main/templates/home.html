@@ -1,0 +1,407 @@
+{% extends "base.html" %}
+
+{% block title %}
+home
+{% endblock title %}
+
+{% block style %}
+@media (max-width: 768px) {
+
+   /* For mobile devices */
+   #carouselExampleDark {
+     height: 50vh !important;
+     /* At least half of the screen height */
+   }
+
+   .carousel-item img {
+     height: 50vh;
+     /* Ensure images fill half of the screen */
+     object-fit: cover;
+     /* Prevent distortion, cover entire area */
+   }
+
+   .carousel-caption {
+     bottom: 10px;
+     /* Adjust text position */
+   }
+ }
+
+ @media (max-width: 768px) {
+   .carousel-item img {
+     height: 55vh !important;
+     /* Ensures the GIF fills at least half the screen */
+     width: 100%;
+     object-fit: cover;
+     /* Keeps proportions without stretching */
+     display: block;
+   }
+ }
+
+{% endblock style %}
+
+{% block body %}
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="height: 65vh;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="/static/loop.gif" class="d-block w-100" alt="..." style="object-fit: cover; height: 100%;">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h1>TEAM IGNITE</h1>
+            <p>"Team Ignite: Innovating, coding, collaborating—pushing boundaries, creating the future together!" 🚀</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="/static/never.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/static/stuckin.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-black">
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="/static/learning.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-white">
+            <p>X X X</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card text-center" style="height: 35vh;">
+
+      <div class="card-body">
+        <h5 class="card-title">Developer Only</h5>
+        <p class="card-text">Ready to Start your coding journey lets begin then..!</p>
+        <a href="#" class="btn btn-dark">SCROLL</a>
+      </div>
+      <div class="card-footer text-muted" style="height: 10vh;">
+        QUASAR HACKATHON PROBLEM STATEMENT 1 ROADMAPS FOR DEVELOPERS
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fs-1 text-center fw-bolder" style="height: 10vh; padding: 100px 0px 100px 0px;">
+      < - - R O A D M A P S - ->
+    </div>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <image
+                  href="https://media.licdn.com/dms/image/v2/D5612AQFfhTEictqBHA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721174916441?e=2147483647&v=beta&t=IqnGNJxS4J-yaL4rgLBlx-cbNAbFwpEMCRvkkLXsR48"
+                  width="100%" height="100%" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Frontend development creates the user interface and
+                      experience, using HTML, CSS, JavaScript to build interactive, visually appealing websites.</font>
+                  </font>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disabled">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--></font>
+                      </font>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-success">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ROADMAP</font>
+                      </font>
+                    </button>
+                  </div>
+                  <small class="text-muted">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">bootcamp</font>
+                    </font>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <image href="https://ddi-dev.com/uploads/backend-is.png" width="100%" height="100%" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">This is a larger card with supporting text below as a natural
+                      introduction to additional content. This content is a bit longer.</font>
+                  </font>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disabled">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--></font>
+                      </font>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-success">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ROADMAP</font>
+                      </font>
+                    </button>
+                  </div>
+                  <small class="text-muted">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">bootcamp</font>
+                    </font>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <image
+                  href="data:image/jpeg;base64,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"
+                  width="100%" height="100%" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">This is a larger card with supporting text below as a natural
+                      introduction to additional content. This content is a bit longer.</font>
+                  </font>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disabled">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--></font>
+                      </font>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-success">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ROADMAP</font>
+                      </font>
+                    </button>
+                  </div>
+                  <small class="text-muted">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">bootcamp</font>
+                    </font>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <image
+                  href="https://media.licdn.com/dms/image/v2/D5612AQHk1TSLucGSCQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699339646894?e=2147483647&v=beta&t=snQJ1CVA4Bhx16tGiHk_ePXccBeBd59G2d_fjXObQZs"
+                  width="100%" height="100%" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">This is a larger card with supporting text below as a natural
+                      introduction to additional content. This content is a bit longer.</font>
+                  </font>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disabled">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--></font>
+                      </font>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-success">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ROADMAP</font>
+                      </font>
+                    </button>
+                  </div>
+                  <small class="text-muted">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">bootcamp</font>
+                    </font>
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <image href="https://beecrowd.com/wp-content/uploads/2024/04/2022-07-19-Melhores-cursos-de-Python.jpg"
+                  width="100%" height="100%" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">This is a larger card with supporting text below as a natural
+                      introduction to additional content. This content is a bit longer.</font>
+                  </font>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disabled">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--></font>
+                      </font>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-success">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ROADMAP</font>
+                      </font>
+                    </button>
+                  </div>
+                  <small class="text-muted">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">bootcamp</font>
+                    </font>
+                  </small>
+                </div>
+              </div>
+            </div>
+            </di-->
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <header class="blog-header py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+
+            </div>
+
+            <div class="col-4 d-flex justify-content-end align-items-center">
+
+            </div>
+          </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+
+        </div>
+
+        <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+            <h1 class="display-4" style="font-weight: 900; color: darkgrey;">Trending </h1>
+            <p class="lead my-3"></p>
+            <p class="lead mb-0 mx-1" style="font-size: 15px;">CAREER OPTIONS...</p>
+          </div>
+        </div>
+
+        <div class="row mb-2 my-4">
+          <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-warning">TECHNOLOGY</strong>
+                <h3 class="mb-0">
+                  <h4 class="text-dark">AI & Machine Learning Engineer</h4>
+                </h3>
+                <p class="card-text mb-auto">Develops AI models, deep learning, NLP, and automation systems.</p>
+                <a href="https://en.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language">more</a>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-info">Design</strong>
+                <h3 class="mb-0">
+                  <h4 class="text-dark">Product Manager</h4>
+                </h3>
+                <p class="card-text mb-auto">Oversees product lifecycle, market analysis, and execution.</p>
+                <a href="https://www.atlassian.com/agile/product-management/product-manager#:~:text=A%20product%20manager%20is%20the,that%20vision%20into%20a%20reality.">more</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-danger">Healthcare & Biotechnology</strong>
+                <h3 class="mb-0">
+                  <h4 class="text-dark">Genetic Counselor</h4>
+                </h3>
+                <p class="card-text mb-auto">Analyzes genetic data, advises patients, assesses hereditary risks, and treatments.</p>
+                <a href="https://college.mayo.edu/academics/explore-health-care-careers/careers-a-z/genetic-counselor/">more</a>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-success">Sustainability & Green Jobs</strong>
+                <h3 class="mb-0">
+                  <h4 class="text-dark" href="#">ESG Consultant</h4>
+                </h3>
+                <p class="card-text mb-auto">Helps businesses adopt sustainability, reduce carbon footprints, and ensure compliance.</p>
+                <a href="http://try.sgs.com/en-in/esg-certification-advisory/?wt_mc_id=gCBEIN01014c&utm_source=Google&utm_medium=PPC_Search_Text_Ads&utm_campaign=ESG_Assurance_Solutions_LG_IN_GSN_VR2&&utm_source=google&utm_medium=cpc&utm_campaign=&gad_source=1&gclid=CjwKCAiAzPy8BhBoEiwAbnM9O8A_SmEjZ5Xjt50BVQ7TDyOgW1--JOpgmArLEK3cBj4PeILRXFUPhhoCd1YQAvD_BwE&gclsrc=aw.ds">more</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
+  {% endblock body %}
+  
